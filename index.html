@@ -23,7 +23,40 @@
     <link href="css/css_1.css" rel="stylesheet" type="text/css">
     <meta name="description" content="">
     <meta name="author" content="">
+
+	  <script>
+          function initMap() {
+              var map = new google.maps.Map(document.getElementById('map'), {
+                  center: {lat: 28.6081, lng: 77.0362},
+                  zoom: 15
+              });
+
+              var infowindow = new google.maps.InfoWindow();
+              var service = new google.maps.places.PlacesService(map);
+
+              service.getDetails({
+                  placeId: 'ChIJmzx4FjUFDTkRRoSiIqtA5Qc'
+              }, function(place, status) {
+                  if (status === google.maps.places.PlacesServiceStatus.OK) {
+                      console.log(place);
+                      var marker = new google.maps.Marker({
+                          map: map,
+                          position: place.geometry.location
+                      });
+                      google.maps.event.addListener(marker, 'click', function() {
+                          infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
+                              'Place ID: ' + place.place_id + '<br>' +
+                              place.formatted_address + '</div>');
+                          infowindow.open(map, this);
+                      });
+                  }
+              });
+          }
+
+
+	  </script>
   </head>
+
 <body>
 
     <!-- BEGIN POPUP -->
@@ -138,13 +171,43 @@
   	<section class="about-section" id="about">
   		<div class="container">
 	  		<h2><strong>ABOUT this EVENT</strong></h2>
-	  		<p>Russia students back forever alone fap fap le me le derp i dont get it donut. Boobs phone no scumbag scared i lied 140% love le girlfriend. Cool father okay a wodka happy blizzard 9000 fuck that shit. Collection not bad feel like a sir cellphone unlock faggot close enough varius too mainstream lol sexy time. Friendzoned problem? Hulk freddie mercury pizza no bad creepy me gusta facepalm bear i'm watching u. Mom simpson money joke brother kitchen woman gtfo cat. Face always pokeman painfull rainbow ba dumm tss essay jackie chan hac. Meme finals amet poker face challenge accepted star wars t-rex dog admire. </p>
+			<p>
+				Hack Ok Please, a unique hackathon that focuses on bringing the coding community together to get together and pitch awesome ideas. We are optimistic with regards to the possibilities offered by innovative methods in the currently hot field of technological problem solving. We promise Hack Ok Please will be a distinctly innovative experience unlike others.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat hic, incidunt iusto officiis praesentium tenetur. Ab accusantium animi atque delectus, eveniet exercitationem ipsum magni, neque quas sequi tenetur, vel voluptate!
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut labore laboriosam magnam natus ratione. A eaque eligendi enim error illum laudantium maiores, numquam, perspiciatis quibusdam quos rem sed veritatis vitae?
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consectetur corporis excepturi iure nesciunt nisi non, odit pariatur sunt vitae! Assumenda culpa enim, harum ipsa libero rem similique sint suscipit?
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci alias consequatur ipsum molestias quia quibusdam recusandae ut! Dolorum, nemo perferendis! Ab corporis doloremque facere, maxime mollitia neque repellat sit.
+			</p>
   		</div>
   	</section>
   	<section class="about-section" id="themes">
   		<div class="container">
 	  		<h2><strong>Themes of this EVENT</strong></h2>
-	  		<p>Russia students back forever alone fap fap le me le derp i dont get it donut. Boobs phone no scumbag scared i lied 140% love le girlfriend. Cool father okay a wodka happy blizzard 9000 fuck that shit. Collection not bad feel like a sir cellphone unlock faggot close enough varius too mainstream lol sexy time. Friendzoned problem? Hulk freddie mercury pizza no bad creepy me gusta facepalm bear i'm watching u. Mom simpson money joke brother kitchen woman gtfo cat. Face always pokeman painfull rainbow ba dumm tss essay jackie chan hac. Meme finals amet poker face challenge accepted star wars t-rex dog admire. </p>
+			<p>
+				The following tracks under Build For India have been shortlisted for the hackathon. We encourage participants to come up with intelligent problem solving ideas in these sectors.
+			</p>
+			<p>
+			<ul>
+				<li>
+					Fitness
+				</li>
+				<li>
+					Waste Management
+				</li>
+				<li>
+					Natural Calamities
+				</li>
+				<li>
+					Tourism
+				</li>
+				<li>
+					Smart Mobility
+				</li>
+			</ul>
+			</p>
+
   		</div>
   	</section>
   	<!--<section class="who-section gray-section" id="who">-->
@@ -425,7 +488,7 @@
   	<section class="where-section" id="where">
 		<div class="container">
 			<h2><strong>LOCATION</strong></h2>
-			<p class="text-center">Cool father okay a wodka happy blizzard 9000 fuck that shit. Collection not bad feel like a sir cellphone unlock faggot close <br> enough varius too mainstream lol sexy time. Friendzoned problem?</p>
+			<p class="text-center">Netaji Subhas University of Technology - previously known as Netaji Subhas Institute of Technology is one of the best Engineering Colleges in India consistently ranked among the top undergraduate institutions.</p>
 		</div>
 
 		<div class="map">
@@ -622,9 +685,12 @@
 	<!--[if gte IE 9]><!-->
 	<!--<![endif]-->
 	<script src="js/jquery.min.js"></script>
-	<script src="js_1.js"></script>
+	<!--<script src="js_1.js"></script>-->
     <script src="js/all.min.js"></script>
-    <script src="js/map.js"></script>
+    <!--<script src="js/map.js"></script>-->
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvHBgbR7aq9bSGq3wZwq4FDfesPba8rBk&libraries=places&callback=initMap"
+			async defer></script>
     <script src="js/init.min.js"></script>
   </body>
 </html>

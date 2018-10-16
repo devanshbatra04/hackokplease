@@ -2232,7 +2232,7 @@ li>ol {
 }
 
 section {
-    padding: 140px 0;
+    padding: 60px 0 0 0;
     background-color: #fff
 }
 
@@ -2246,7 +2246,7 @@ section h5 {
 section h2 {
     text-align: center;
     color: #222222;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
     font-weight: 700;
     text-transform: uppercase
 }
