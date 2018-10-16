@@ -4107,7 +4107,7 @@ input[type="checkbox"]:checked+.check-box-item {
     position: relative;
     z-index: 2;
     display: block;
-    min-height: 430px
+    //min-height: 430px
 }
 
 .how-much-section article a {
