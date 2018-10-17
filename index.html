@@ -1,681 +1,739 @@
 <!DOCTYPE html>
 <!--[if IE 8]>    <html class=" no-js ie8 oldie" lang="en"> <![endif]-->
 <!--[if IE 9]>    <html class=" no-js ie9 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 9]><!--> <html class=" no-js" lang="en"> <!--<![endif]-->
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+<!--[if gt IE 9]><!-->
+<html class=" no-js" lang="en">
+<!--<![endif]-->
 
-    <title>Eventura</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
 
-    <!-- Prefetch DNS for external assets (Twitter widgets etc). -->
-    <link rel="dns-prefetch" href="//ajax.googleapis.com">
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="dns-prefetch" href="//themes.googleusercontent.com">
-    <link rel="dns-prefetch" href="//www.google-analytics.com">
+	<title>HACK OK PLEASE!! CSI NSUT</title>
 
-
-        <!-- <link rel="stylesheet" href=""> -->
-        <link rel="stylesheet" href="css/screen.css">
-
-    <!-- <link rel="icon" type="image/x-icon" href="/favicon.ico" /> -->
-    <link href="css/css.css" rel="stylesheet" type="text/css">
-    <link href="css/css_1.css" rel="stylesheet" type="text/css">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-	  <script>
-          function initMap() {
-              var map = new google.maps.Map(document.getElementById('map'), {
-                  center: {lat: 28.6081, lng: 77.0362},
-                  zoom: 15
-              });
-
-              var infowindow = new google.maps.InfoWindow();
-              var service = new google.maps.places.PlacesService(map);
-
-              service.getDetails({
-                  placeId: 'ChIJmzx4FjUFDTkRRoSiIqtA5Qc'
-              }, function(place, status) {
-                  if (status === google.maps.places.PlacesServiceStatus.OK) {
-                      console.log(place);
-                      var marker = new google.maps.Marker({
-                          map: map,
-                          position: place.geometry.location
-                      });
-                      google.maps.event.addListener(marker, 'click', function() {
-                          infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
-                              'Place ID: ' + place.place_id + '<br>' +
-                              place.formatted_address + '</div>');
-                          infowindow.open(map, this);
-                      });
-                  }
-              });
-          }
+	<!-- Prefetch DNS for external assets (Twitter widgets etc). -->
+	<link rel="dns-prefetch" href="//ajax.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//themes.googleusercontent.com">
+	<link rel="dns-prefetch" href="//www.google-analytics.com">
 
 
-	  </script>
-  </head>
+	<!-- <link rel="stylesheet" href=""> -->
+	<link rel="stylesheet" href="css/screen.css">
+
+	<!-- <link rel="icon" type="image/x-icon" href="/favicon.ico" /> -->
+	<link href="css/css.css" rel="stylesheet" type="text/css">
+	<link href="css/css_1.css" rel="stylesheet" type="text/css">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<script>
+		function initMap() {
+			var map = new google.maps.Map(document.getElementById('map'), {
+				center: { lat: 28.6081, lng: 77.0362 },
+				zoom: 15
+			});
+
+			var infowindow = new google.maps.InfoWindow();
+			var service = new google.maps.places.PlacesService(map);
+
+			service.getDetails({
+				placeId: 'ChIJmzx4FjUFDTkRRoSiIqtA5Qc'
+			}, function (place, status) {
+				if (status === google.maps.places.PlacesServiceStatus.OK) {
+					console.log(place);
+					var marker = new google.maps.Marker({
+						map: map,
+						position: place.geometry.location
+					});
+					google.maps.event.addListener(marker, 'click', function () {
+						infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
+							'Place ID: ' + place.place_id + '<br>' +
+							place.formatted_address + '</div>');
+						infowindow.open(map, this);
+					});
+				}
+			});
+		}
+
+
+	</script>
+</head>
 
 <body>
 
-    <!-- BEGIN POPUP -->
+	<!-- BEGIN POPUP -->
 
-    <div class="popup-email">
-      <div class="element">
-        <button id="btn" class="btn--primary" type="button">OK</button>
-      </div>
-    </div>
+	<div class="popup-email">
+		<div class="element">
+			<button id="btn" class="btn--primary" type="button">OK</button>
+		</div>
+	</div>
 
-    <!-- END POPUP -->
+	<!-- END POPUP -->
 
-  <header class="header-main">
+	<header class="header-main">
 
-	<div class="container">
+		<div class="container">
 
-		<a href="index.html">
-			<img src="images/logo.png" alt="" class="logo-default">
-			<img src="images/logo-black.png" alt="" class="logo-second">
-		</a>
-		<a href="javascript:void(0)" class="right bars"><span class="fa fa-bars"></span></a>
+			<a href="index.html">
+				<img src="images/csi_logo_only_display.jpg" alt="" class="logo-default">
+				<img src="images/csi_logo_only_display.jpg" alt="" class="logo-second">
+			</a>
+			<a href="javascript:void(0)" class="right bars"><span class="fa fa-bars"></span></a>
 
-		<nav>
-			<ul class="list-unstyled">
-				<li>
-					<a href="#about">About</a>
-				</li>
-				<li>
-					<a href="#themes">Themes</a>
-				</li>
-				<!--<li class="">-->
+			<nav>
+				<ul class="list-unstyled">
+					<li>
+						<a href="#about">About</a>
+					</li>
+					<li>
+						<a href="#themes">Themes</a>
+					</li>
+					<li>
+						<a href="#rules">Rules</a>
+					</li>
+					<!--<li class="">-->
 					<!--<a href="#who">Judges</a>-->
-				<!--</li>-->
-				<!--<li class="">-->
+					<!--</li>-->
+					<!--<li class="">-->
 					<!--<a href="#mentors">Mentors</a>-->
-				<!--</li>-->
-				<li>
-					<a href="#when">Schedule</a>
-				</li>
-				<li>
-					<a href="#where">Location</a>
-				</li>
-				<li>
-					<a href="#how-much">Prizes</a>
-				</li>
-				<!--<li>-->
+					<!--</li>-->
+					<li>
+						<a href="#when">Schedule</a>
+					</li>
+					<li>
+						<a href="#where">Location</a>
+					</li>
+					<li>
+						<a href="#how-much">Prizes</a>
+					</li>
+					<!--<li>-->
 					<!--<a href="#sponsors">Sponsors</a>-->
-				<!--</li>-->
-				<!--<li class="drop-link">-->
+					<!--</li>-->
+					<!--<li class="drop-link">-->
 					<!--<a href="javascript:void(0)">Pages</a>-->
 					<!--<ul class="drop-down">-->
-						<!--<li>-->
-							<!--<a href="blog-full-width.html">FAQs</a>-->
-						<!--</li>-->
-						<!--<li>-->
-							<!--<a href="single-post.html">Single Post</a>-->
-						<!--</li>-->
-						<!--<li>-->
-							<!--<a href="#filter">Gallery</a>-->
-						<!--</li>-->
-						<!--<li>-->
-							<!--<a href="contact.html">Contact us</a>-->
-						<!--</li>-->
+					<!--<li>-->
+					<!--<a href="blog-full-width.html">FAQs</a>-->
+					<!--</li>-->
+					<!--<li>-->
+					<!--<a href="single-post.html">Single Post</a>-->
+					<!--</li>-->
+					<!--<li>-->
+					<!--<a href="#filter">Gallery</a>-->
+					<!--</li>-->
+					<!--<li>-->
+					<!--<a href="contact.html">Contact us</a>-->
+					<!--</li>-->
 					<!--</ul>-->
-				<!--</li>-->
-			</ul>
-		</nav>
+					<!--</li>-->
+				</ul>
+			</nav>
 
-	</div>
+		</div>
 
-</header>
+	</header>
 
 
 
-  <main>
+	<main>
 
-  	<div class="subheader" id="subheader-section" style="background-image:url('images/subheader-image.jpg')">
+		<div class="subheader" id="subheader-section" style="background-image:url('images/hackokfinal.png')">
 
-	    <article class="typography">
-	    	<div class="container">
-	    	  <h4>26 - 27th October 2018, Netaji Subhash Institute of Technology, Delhi</h4>
-	    	  <h1>Hack Ok Please</h1>
+			<article class="typography">
+				<div class="container">
+					<h4>26 - 27th October 2018, Netaji Subhash University of Technology, Delhi</h4>
+					<h1>Hack Ok Please</h1>
 
-	    	  <a href="#subheader" class="btn--primary register-now">REGISTER NOW<span class="fa fa-long-arrow-right"></span></a>
-	    	</div>
-	    </article>
+					<a href="https://docs.google.com/forms/d/e/1FAIpQLSdtzpLOEYFGxmQL1g_BJKxmbnW4VaX3KbbA3yeQGRDQMaKr4Q/viewform?usp=sf_link"
+					 target="_blank" class="btn--primary register-now">REGISTER NOW<span class="fa fa-long-arrow-right"></span></a>
+				</div>
+			</article>
 
-	    <div class="counter">
-	    	<h5>Hackathon begins in:</h5>
-	    	<ul class="countdown">
-		        <li>
-		            <span class="days">00</span>
-		            <p class="days_ref">days</p>
-		        </li>
-		        <li>
-		            <span class="hours">00</span>
-		            <p class="hours_ref">hours</p>
-		        </li>
-		        <li>
-		            <span class="minutes">00</span>
-		            <p class="minutes_ref">minutes</p>
-		        </li>
-		        <li>
-		            <span class="seconds">00</span>
-		            <p class="seconds_ref">seconds</p>
-		        </li>
-		    </ul>
-	    </div>
-
-  	</div>
-
-  	<section class="about-section" id="about">
-  		<div class="container">
-	  		<h2><strong>ABOUT this EVENT</strong></h2>
-			<p>
-				Hack Ok Please, a unique hackathon that focuses on bringing the coding community together to get together and pitch awesome ideas. We are optimistic with regards to the possibilities offered by innovative methods in the currently hot field of technological problem solving. We promise Hack Ok Please will be a distinctly innovative experience unlike others.
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat hic, incidunt iusto officiis praesentium tenetur. Ab accusantium animi atque delectus, eveniet exercitationem ipsum magni, neque quas sequi tenetur, vel voluptate!
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut labore laboriosam magnam natus ratione. A eaque eligendi enim error illum laudantium maiores, numquam, perspiciatis quibusdam quos rem sed veritatis vitae?
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consectetur corporis excepturi iure nesciunt nisi non, odit pariatur sunt vitae! Assumenda culpa enim, harum ipsa libero rem similique sint suscipit?
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci alias consequatur ipsum molestias quia quibusdam recusandae ut! Dolorum, nemo perferendis! Ab corporis doloremque facere, maxime mollitia neque repellat sit.
-			</p>
-  		</div>
-  	</section>
-  	<section class="about-section" id="themes">
-  		<div class="container">
-	  		<h2><strong>Themes of this EVENT</strong></h2>
-			<p>
-				The following tracks under Build For India have been shortlisted for the hackathon. We encourage participants to come up with intelligent problem solving ideas in these sectors.
-			</p>
-			<p>
-			<ul>
-				<li>
-					Fitness
-				</li>
-				<li>
-					Waste Management
-				</li>
-				<li>
-					Natural Calamities
-				</li>
-				<li>
-					Tourism
-				</li>
-				<li>
-					Smart Mobility
-				</li>
-			</ul>
-			</p>
-
-  		</div>
-  	</section>
-  	<!--<section class="who-section gray-section" id="who">-->
-  		<!--<div class="container">-->
-  			<!--&lt;!&ndash;<h5>WHO</h5>&ndash;&gt;-->
-  			<!--<h2 class="m-b-20"><strong>Judges</strong></h2>-->
-  			<!--&lt;!&ndash;<h5 class="regular m-b-140">10 - 12th December 2015, London, UK</h5>&ndash;&gt;-->
-
-  			<!--<div class="row">-->
-  				<!--<div class="col-sm-4">-->
-					<!--<div class="box">-->
-						<!--<div class="img-wrap" style="background-image:url('images/images1.jpg');">-->
-
-							<!--<div class="overlay">-->
-
-								<!--<a href="#" class="facebook-link" target="_blank"><span class="fa fa-facebook"></span></a>-->
-								<!--<a href="#" class="twitter-link" target="_blank"><span class="fa fa-twitter"></span></a>-->
-
-							<!--</div>-->
-
-						<!--</div>-->
-						<!--<h3 class="bold">James Seaburg</h3>-->
-						<!--<h5>Digital product designer <br> at FreeAgent</h5>-->
-					<!--</div>-->
-  				<!--</div>-->
-  				<!--<div class="col-sm-4">-->
-					<!--<div class="box">-->
-						<!--<div class="img-wrap" style="background-image:url('images/images2.jpg');">-->
-
-							<!--<div class="overlay">-->
-
-								<!--<a href="#" class="facebook-link" target="_blank"><span class="fa fa-facebook"></span></a>-->
-								<!--<a href="#" class="twitter-link" target="_blank"><span class="fa fa-twitter"></span></a>-->
-
-							<!--</div>-->
-
-						<!--</div>-->
-						<!--<h3 class="bold">John Brandenberger</h3>-->
-						<!--<h5>General Manager of <br> New Products </h5>-->
-					<!--</div>-->
-  				<!--</div>-->
-  				<!--<div class="col-sm-4">-->
-					<!--<div class="box">-->
-						<!--<div class="img-wrap" style="background-image:url('images/images3.jpg');">-->
-
-							<!--<div class="overlay">-->
-
-								<!--<a href="#" class="facebook-link" target="_blank"><span class="fa fa-facebook"></span></a>-->
-								<!--<a href="#" class="twitter-link" target="_blank"><span class="fa fa-twitter"></span></a>-->
-
-							<!--</div>-->
-
-						<!--</div>-->
-						<!--<h3 class="bold">Sarah Walton</h3>-->
-						<!--<h5>Art director and web designer at the <br> UK website design studio Stuff <br> and Nonsense</h5>-->
-					<!--</div>-->
-  				<!--</div>-->
-  				<!--<div class="col-sm-4">-->
-					<!--<div class="box">-->
-						<!--<div class="img-wrap" style="background-image:url('images/images4.jpg');">-->
-
-							<!--<div class="overlay">-->
-
-								<!--<a href=" 	" class="facebook-link" target="_blank"><span class="fa fa-facebook"></span></a>-->
-								<!--<a href="#" class="twitter-link" target="_blank"><span class="fa fa-twitter"></span></a>-->
-
-							<!--</div>-->
-
-						<!--</div>-->
-						<!--<h3 class="bold">Leisa Geller</h3>-->
-						<!--<h5>Web craftsman and partner at <br> Fictive Kin</h5>-->
-					<!--</div>-->
-  				<!--</div>-->
-  				<!--<div class="col-sm-4">-->
-					<!--<div class="box">-->
-						<!--<div class="img-wrap" style="background-image:url('images/images5.jpg');">-->
-
-							<!--<div class="overlay">-->
-
-								<!--<a href="#" class="facebook-link" target="_blank"><span class="fa fa-facebook"></span></a>-->
-								<!--<a href="#" class="twitter-link" target="_blank"><span class="fa fa-twitter"></span></a>-->
-
-							<!--</div>-->
-
-						<!--</div>-->
-						<!--<h3 class="bold">Andrew Bismarck</h3>-->
-						<!--<h5>Senior Product Designer at <br> Salesforce UX</h5>-->
-					<!--</div>-->
-  				<!--</div>-->
-  				<!--<div class="col-sm-4">-->
-					<!--<div class="box">-->
-						<!--<div class="img-wrap" style="background-image:url('images/images6.jpg');">-->
-
-							<!--<div class="overlay">-->
-
-								<!--<a href="#" class="facebook-link" target="_blank"><span class="fa fa-facebook"></span></a>-->
-								<!--<a href="#" class="twitter-link" target="_blank"><span class="fa fa-twitter"></span></a>-->
-
-							<!--</div>-->
-
-						<!--</div>-->
-						<!--<h3 class="bold">Patrick Mainhardt</h3>-->
-						<!--<h5>Senior engineer at the Financial <br> Times in London</h5>-->
-					<!--</div>-->
-  				<!--</div>-->
-  			<!--</div>-->
-  		<!--</div>-->
-  	<!--</section>-->
-  	  	<!--<section class="who-section gray-section" id="mentors">-->
-  		<!--<div class="container">-->
-  			<!--&lt;!&ndash;<h5>WHO</h5>&ndash;&gt;-->
-  			<!--<h2 class="m-b-20"><strong>Mentors</strong></h2>-->
-  			<!--&lt;!&ndash;<h5 class="regular m-b-140">10 - 12th December 2015, London, UK</h5>&ndash;&gt;-->
-
-  			<!--<div class="row">-->
-  				<!--<div class="col-sm-4">-->
-					<!--<div class="box">-->
-						<!--<div class="img-wrap" style="background-image:url('images/images1.jpg');">-->
-
-							<!--<div class="overlay">-->
-
-								<!--<a href="#" class="facebook-link" target="_blank"><span class="fa fa-facebook"></span></a>-->
-								<!--<a href="#" class="twitter-link" target="_blank"><span class="fa fa-twitter"></span></a>-->
-
-							<!--</div>-->
-
-						<!--</div>-->
-						<!--<h3 class="bold">James Seaburg</h3>-->
-						<!--<h5>Digital product designer <br> at FreeAgent</h5>-->
-					<!--</div>-->
-  				<!--</div>-->
-  				<!--<div class="col-sm-4">-->
-					<!--<div class="box">-->
-						<!--<div class="img-wrap" style="background-image:url('images/images2.jpg');">-->
-
-							<!--<div class="overlay">-->
-
-								<!--<a href="#" class="facebook-link" target="_blank"><span class="fa fa-facebook"></span></a>-->
-								<!--<a href="#" class="twitter-link" target="_blank"><span class="fa fa-twitter"></span></a>-->
-
-							<!--</div>-->
-
-						<!--</div>-->
-						<!--<h3 class="bold">John Brandenberger</h3>-->
-						<!--<h5>General Manager of <br> New Products </h5>-->
-					<!--</div>-->
-  				<!--</div>-->
-  				<!--<div class="col-sm-4">-->
-					<!--<div class="box">-->
-						<!--<div class="img-wrap" style="background-image:url('images/images3.jpg');">-->
-
-							<!--<div class="overlay">-->
-
-								<!--<a href="#" class="facebook-link" target="_blank"><span class="fa fa-facebook"></span></a>-->
-								<!--<a href="#" class="twitter-link" target="_blank"><span class="fa fa-twitter"></span></a>-->
-
-							<!--</div>-->
-
-						<!--</div>-->
-						<!--<h3 class="bold">Sarah Walton</h3>-->
-						<!--<h5>Art director and web designer at the <br> UK website design studio Stuff <br> and Nonsense</h5>-->
-					<!--</div>-->
-  				<!--</div>-->
-  				<!--<div class="col-sm-4">-->
-					<!--<div class="box">-->
-						<!--<div class="img-wrap" style="background-image:url('images/images4.jpg');">-->
-
-							<!--<div class="overlay">-->
-
-								<!--<a href=" 	" class="facebook-link" target="_blank"><span class="fa fa-facebook"></span></a>-->
-								<!--<a href="#" class="twitter-link" target="_blank"><span class="fa fa-twitter"></span></a>-->
-
-							<!--</div>-->
-
-						<!--</div>-->
-						<!--<h3 class="bold">Leisa Geller</h3>-->
-						<!--<h5>Web craftsman and partner at <br> Fictive Kin</h5>-->
-					<!--</div>-->
-  				<!--</div>-->
-  				<!--<div class="col-sm-4">-->
-					<!--<div class="box">-->
-						<!--<div class="img-wrap" style="background-image:url('images/images5.jpg');">-->
-
-							<!--<div class="overlay">-->
-
-								<!--<a href="#" class="facebook-link" target="_blank"><span class="fa fa-facebook"></span></a>-->
-								<!--<a href="#" class="twitter-link" target="_blank"><span class="fa fa-twitter"></span></a>-->
-
-							<!--</div>-->
-
-						<!--</div>-->
-						<!--<h3 class="bold">Andrew Bismarck</h3>-->
-						<!--<h5>Senior Product Designer at <br> Salesforce UX</h5>-->
-					<!--</div>-->
-  				<!--</div>-->
-  				<!--<div class="col-sm-4">-->
-					<!--<div class="box">-->
-						<!--<div class="img-wrap" style="background-image:url('images/images6.jpg');">-->
-
-							<!--<div class="overlay">-->
-
-								<!--<a href="#" class="facebook-link" target="_blank"><span class="fa fa-facebook"></span></a>-->
-								<!--<a href="#" class="twitter-link" target="_blank"><span class="fa fa-twitter"></span></a>-->
-
-							<!--</div>-->
-
-						<!--</div>-->
-						<!--<h3 class="bold">Patrick Mainhardt</h3>-->
-						<!--<h5>Senior engineer at the Financial <br> Times in London</h5>-->
-					<!--</div>-->
-  				<!--</div>-->
-  			<!--</div>-->
-  		<!--</div>-->
-  	<!--</section>-->
-  	<section class="when-section" id="when">
-  		<div class="container">
-  			<h2><strong>SCHEDULE</strong></h2>
-
-		    <div class="customNavigation nav-slider text-center">
-  		 		<a href="javascript:void(0)" class="inline middle btn prev"><img src="fonts/arrow-left.svg" class="m-t--3" alt=""></a>
-  		 		<span class="text-nav inline middle" id="currDate">26th October 2018</span>
-  		 		<a href="javascript:void(0)" class="inline middle btn next"><img src="fonts/arrow-right.svg" class="m-t--3" alt=""></a>
+			<div class="counter">
+				<h5>Hackathon begins in:</h5>
+				<ul class="countdown">
+					<li>
+						<span class="days">00</span>
+						<p class="days_ref">days</p>
+					</li>
+					<li>
+						<span class="hours">00</span>
+						<p class="hours_ref">hours</p>
+					</li>
+					<li>
+						<span class="minutes">00</span>
+						<p class="minutes_ref">minutes</p>
+					</li>
+					<li>
+						<span class="seconds">00</span>
+						<p class="seconds_ref">seconds</p>
+					</li>
+				</ul>
 			</div>
 
-  			<div id="when-slider" class="owl-carousel owl-theme">
-
-			    <div class="item" data-date="26th October 2018">
-					<article>
-						<ul class="list-unstyled">
-							<li>
-								<div class="row">
-									<div class="col-lg-2">
-										<h3><strong>09:00</strong></h3>
-										<p><span class="fa fa-clock-o m-r-5"></span>45 min</p>
-									</div>
-									<div class="col-lg-6">
-										<h3><strong>To Be Released Soon!</strong></h3>
-										<p>Hold on! We are working hard to get the best hackathon to you</p>
-									</div>
-									<div class="col-lg-3 col-lg-offset-1">
-										<h3 class="light">CSI NSIT</h3>
-									</div>
-								</div>
-
-							</li>
-
-						</ul>
-					</article>
-			    </div>
-			    <div class="item" data-date="27th October 2018">
-		  		 	<article>
-		  		 		<ul class="list-unstyled">
-		  		 			<li>
-		  		 				<div class="row">
-		  		 					<div class="col-lg-2">
-		  		 						<h3><strong>09:00</strong></h3>
-		  		 						<p><span class="fa fa-clock-o m-r-5"></span>45 min</p>
-		  		 					</div>
-		  		 					<div class="col-lg-6">
-		  		 						<h3><strong>To Be Released Soon!</strong></h3>
-		  		 						<p>Hold on! We are working hard to get the best hackathon to you</p>
-		  		 					</div>
-		  		 					<div class="col-lg-3 col-lg-offset-1">
-		  		 						<h3 class="light">CSI NSIT</h3>
-		  		 					</div>
-		  		 				</div>
-
-		  		 			</li>
-
-		  		 		</ul>
-		  		 	</article>
-			    </div>
-
-		    </div>
-
-  		</div>
-  	</section>
-  	<section class="where-section" id="where">
-		<div class="container">
-			<h2><strong>LOCATION</strong></h2>
-			<p class="text-center">Netaji Subhas University of Technology - previously known as Netaji Subhas Institute of Technology is one of the best Engineering Colleges in India consistently ranked among the top undergraduate institutions.</p>
 		</div>
 
-		<div class="map">
-
-			<div id="map"></div>
-
-			<div class="map-info-box">
-	            <a href="javascript:void(0)" class="show-location"><span class="blink">LESS DETAILS</span></a>
-	            <div class="map-info">
-	            	<h5>Address</h5>
-	            	<p>Azad Hind Fauz Marg,</p>
-	            	<p> Sector 3, Dwarka, New Delhi, Delhi </p>
-	            	<h5>Email</h5>
-	            	<p><a href="mailto:innovision.hackathon@gmail.com">innovision.hackathon@gmail.com</a></p>
-	            	<h5>Phone</h5>
-	            	<p>Ashish Kushwaha - +91 - 9599162910</p>
-		        </div>
-	        </div>
-
-		</div>
-
-  	</section>
-  	<section class="how-much-section" id="how-much">
-		<div class="container">
-			<h2><strong>PRIZES</strong></h2>
-
-			<div class="row">
-				<div class="col-sm-4">
-
-					<!--<article style="background-image:url('images/prcing-img.jpg');">-->
-					<article>
-						<div>
-							<h3>First Prize</h3>
-							<h4>Cash Prize To Be Revealed Soon</h4>
-							<h5>Plus Amazon Echo</h5>
-							<h5>And lots of swag</h5>
-						</div>
-					</article>
-
-				</div>
-				<div class="col-sm-4">
-
-					<!--<article style="background-image:url('images/prcing-img.jpg');">-->
-					<article>
-						<div>
-							<h3>Second Prize</h3>
-							<h4>Cash Prize To Be Revealed Soon</h4>
-							<h5>Plus Mi Bands</h5>
-							<h5>And lots of swag</h5>
-						</div>
-					</article>
-
-				</div>
-				<div class="col-sm-4">
-
-					<!--<article style="background-image:url('images/prcing-img.jpg');">-->
-					<article>
-						<div>
-							<h3>Third Prize</h3>
-							<h4>Cash Prize To Be Revealed Soon</h4>
-							<h5>Boat Portable Speakers</h5>
-							<h5>And lots of swag</h5>
-						</div>
-					</article>
-
-				</div>
+		<section class="about-section" id="about">
+			<div class="container">
+				<h2><strong>ABOUT this EVENT</strong></h2>
+				<p>
+					Hack OK Please is an intercollegiate Hackathon aimed at providing a platform for thinkers to ideate solutions
+					around 'Build for India', thereby translating them into working prototypes in 24 hours of hacking period.
+				</p>
+				<p>
+					Product can be website, application, module, web extension, an improvement on existing applications, or simply
+					anything that can be coded and sold as an achievement. Various technologies including but not limited to ML, AI,
+					Blockchain, IoT can be incorporated into these themes.
+				</p><p>
+					<b>Hack OK Please</b> also offers an amazing opportunity to Interact with fellow developers, mentors and judges, thus building
+					a timeless community of like-minded people!
+				</p><p>
+					Teams will be judged on innovation & ideation, feasibility of their product, proportion of the proposed product
+					that they were able to build and the alignment of their solution with the theme.
+				</p>
 			</div>
-		</div>
-  	</section>
+		</section>
+		<section class="about-section" id="themes">
+			<div class="container">
+				<h2><strong>Themes of this EVENT</strong></h2>
+				<p>
+					We encourage invariably everyone - from newbies to frequent Hackathon goers to register for one of Delhi's biggest
+					Hackathon where ideas on making for the country will acquire wings under the following tracks :
+				</p>
+				<p>
+					<ul>
+						<li>
+							<b>Fitness</b> - ‘Fit India’ is a movement to take the nation forward on the path of fitness and wellness. At Hack OK Please, we provide you a unique and exciting opportunity to work towards a healthier India. 
+						</li>
+						<li>
+							<b>Waste Management</b> - Swachh Bharat Abhiyan or Swachh Bharat Mission is a nation-wide campaign in India for the period 2014 to 2019 that aims to clean up the streets, roads and infrastructure of India's cities, towns, and rural areas. We urge you to brainstorm solutions that assist the movement
+						</li>
+						<li>
+							<b>Natural calamities </b>- Beginning on 15 August 2018, Kerela saw the worst flooding in nearly a century. Drawing from that, we felt the need of building software solutions around Natural Calamities and Disasters. 
+						</li>
+						<li>
+							<b>Tourism </b>- Tourism in India is important for the country's economy and is growing rapidly. Be it designing applications for the existing industry or coming up with something to promote domestic tourism, we await your mind blowing ideas!
+						</li>
+						<li>
+							<b>Smart Mobility</b> - Indians commute miles every single day. A significant fraction of our day is spent in travelling. Technology has played a very significant role in enabling more people to commute. Imagine how technology can make human experience even better in day to day transportation and commute. What can technology do make public and private transportation much simpler?
+						</li>
+					</ul>
+				</p>
 
-	  <section class="clients-section" id="sponsors">
-		  <div class="container">
-			  <h2><strong>OUR SPONSORS</strong></h2>
-			  <!--<ul class="list-unstyled">-->
-			  <!--<li>-->
-			  <!--<a href="#">-->
-			  <!--<img src="images/client-icon1.png" alt="">-->
-			  <!--</a>-->
-			  <!--</li>-->
-			  <!--<li>-->
-			  <!--<a href="#">-->
-			  <!--<img src="images/client-icon2.png" alt="">-->
-			  <!--</a>-->
-			  <!--</li>-->
-			  <!--<li>-->
-			  <!--<a href="#">-->
-			  <!--<img src="images/client-icon3.png" alt="">-->
-			  <!--</a>-->
-			  <!--</li>-->
-			  <!--<li>-->
-			  <!--<a href="#">-->
-			  <!--<img src="images/client-icon4.png" alt="">-->
-			  <!--</a>-->
-			  <!--</li>-->
-			  <!--<li>-->
-			  <!--<a href="#">-->
-			  <!--<img src="images/client-icon5.png" alt="">-->
-			  <!--</a>-->
-			  <!--</li>-->
-			  <!--<li>-->
-			  <!--<a href="#">-->
-			  <!--<img src="images/client-icon6.png" alt="">-->
-			  <!--</a>-->
-			  <!--</li>-->
-			  <!--<li>-->
-			  <!--<a href="#">-->
-			  <!--<img src="images/client-icon7.png" alt="">-->
-			  <!--</a>-->
-			  <!--</li>-->
-			  <!--</ul>-->
-			  <div class="row">
-				  <div class="col-12">
-					  <img style="display: block;    margin: 0 auto;    max-width: 380px;" src="coming-soon.png" id="sponsi-pic">
-				  </div>
-			  </div>
-		  </div>
-	  </section>
-  	<!--<section class="clients-section" id="sponsors">-->
+			</div>
+		</section>
+
+		<section class="about-section" id="rules">
+			<div class="container">
+				<h2><strong>Rules of this EVENT</strong></h2>
+				<p>
+					<ol>
+						<li>Team size - upto 3 members</li>
+						<li>Teams should be made up exclusively of students who are not organizers, volunteers, judges, sponsors, or in any other privileged position at the event.</li>
+						<li>All team members should be present at the event for the entire duration of the hackathon</li>
+						<li>Teams can of course gain advice and support from organizers, volunteers, sponsors, and others.</li>
+						<li>All work on a project should be done at the hackathon. Teams will be subject to disqualification if found otherwise</li>
+						<li>Teams can work only on ideas that align closely with the theme for the hack</li>
+						<li>Teams can use libraries, frameworks, or open-source code in their projects.</li>
+						<li>Working on a project before the event and open-sourcing it for the sole purpose of using the code during the event is against the spirit of the rules and is not allowed.</li>
+						<li>Adding new features to existing projects is allowed. Judges will only consider new functionality introduced or new features added during the hackathon in determining the winners.</li>
+						<li>Teams must stop hacking once the time is up. However, teams are allowed to debug and make small fixes to their programs after time is up. e.g. If during demoing your hack you find a bug that breaks your application and the fix is only a few lines of code, it's okay to fix that. Making large changes or adding new features is not allowed.</li>
+					</ol>
+				</p>
+
+			</div>
+		</section>
+
+		<!--<section class="who-section gray-section" id="who">-->
 		<!--<div class="container">-->
-			<!--<h2><strong>OUR SPONSORS</strong></h2>-->
-			<!--<ul class="list-unstyled">-->
-				<!--<li>-->
-					<!--<a href="#">-->
-						<!--<img src="images/client-icon1.png" alt="">-->
-					<!--</a>-->
-				<!--</li>-->
-				<!--<li>-->
-					<!--<a href="#">-->
-						<!--<img src="images/client-icon2.png" alt="">-->
-					<!--</a>-->
-				<!--</li>-->
-				<!--<li>-->
-					<!--<a href="#">-->
-						<!--<img src="images/client-icon3.png" alt="">-->
-					<!--</a>-->
-				<!--</li>-->
-				<!--<li>-->
-					<!--<a href="#">-->
-						<!--<img src="images/client-icon4.png" alt="">-->
-					<!--</a>-->
-				<!--</li>-->
-				<!--<li>-->
-					<!--<a href="#">-->
-						<!--<img src="images/client-icon5.png" alt="">-->
-					<!--</a>-->
-				<!--</li>-->
-				<!--<li>-->
-					<!--<a href="#">-->
-						<!--<img src="images/client-icon6.png" alt="">-->
-					<!--</a>-->
-				<!--</li>-->
-				<!--<li>-->
-					<!--<a href="#">-->
-						<!--<img src="images/client-icon7.png" alt="">-->
-					<!--</a>-->
-				<!--</li>-->
-			<!--</ul>-->
+		<!--&lt;!&ndash;<h5>WHO</h5>&ndash;&gt;-->
+		<!--<h2 class="m-b-20"><strong>Judges</strong></h2>-->
+		<!--&lt;!&ndash;<h5 class="regular m-b-140">10 - 12th December 2015, London, UK</h5>&ndash;&gt;-->
+
+		<!--<div class="row">-->
+		<!--<div class="col-sm-4">-->
+		<!--<div class="box">-->
+		<!--<div class="img-wrap" style="background-image:url('images/images1.jpg');">-->
+
+		<!--<div class="overlay">-->
+
+		<!--<a href="#" class="facebook-link" target="_blank"><span class="fa fa-facebook"></span></a>-->
+		<!--<a href="#" class="twitter-link" target="_blank"><span class="fa fa-twitter"></span></a>-->
+
 		<!--</div>-->
-  	<!--</section>-->
 
-  	<a id="top" href="#subheader">
-		<img src="images/arrow-top.png" alt="">
-	</a>
-  </main>
+		<!--</div>-->
+		<!--<h3 class="bold">James Seaburg</h3>-->
+		<!--<h5>Digital product designer <br> at FreeAgent</h5>-->
+		<!--</div>-->
+		<!--</div>-->
+		<!--<div class="col-sm-4">-->
+		<!--<div class="box">-->
+		<!--<div class="img-wrap" style="background-image:url('images/images2.jpg');">-->
+
+		<!--<div class="overlay">-->
+
+		<!--<a href="#" class="facebook-link" target="_blank"><span class="fa fa-facebook"></span></a>-->
+		<!--<a href="#" class="twitter-link" target="_blank"><span class="fa fa-twitter"></span></a>-->
+
+		<!--</div>-->
+
+		<!--</div>-->
+		<!--<h3 class="bold">John Brandenberger</h3>-->
+		<!--<h5>General Manager of <br> New Products </h5>-->
+		<!--</div>-->
+		<!--</div>-->
+		<!--<div class="col-sm-4">-->
+		<!--<div class="box">-->
+		<!--<div class="img-wrap" style="background-image:url('images/images3.jpg');">-->
+
+		<!--<div class="overlay">-->
+
+		<!--<a href="#" class="facebook-link" target="_blank"><span class="fa fa-facebook"></span></a>-->
+		<!--<a href="#" class="twitter-link" target="_blank"><span class="fa fa-twitter"></span></a>-->
+
+		<!--</div>-->
+
+		<!--</div>-->
+		<!--<h3 class="bold">Sarah Walton</h3>-->
+		<!--<h5>Art director and web designer at the <br> UK website design studio Stuff <br> and Nonsense</h5>-->
+		<!--</div>-->
+		<!--</div>-->
+		<!--<div class="col-sm-4">-->
+		<!--<div class="box">-->
+		<!--<div class="img-wrap" style="background-image:url('images/images4.jpg');">-->
+
+		<!--<div class="overlay">-->
+
+		<!--<a href=" 	" class="facebook-link" target="_blank"><span class="fa fa-facebook"></span></a>-->
+		<!--<a href="#" class="twitter-link" target="_blank"><span class="fa fa-twitter"></span></a>-->
+
+		<!--</div>-->
+
+		<!--</div>-->
+		<!--<h3 class="bold">Leisa Geller</h3>-->
+		<!--<h5>Web craftsman and partner at <br> Fictive Kin</h5>-->
+		<!--</div>-->
+		<!--</div>-->
+		<!--<div class="col-sm-4">-->
+		<!--<div class="box">-->
+		<!--<div class="img-wrap" style="background-image:url('images/images5.jpg');">-->
+
+		<!--<div class="overlay">-->
+
+		<!--<a href="#" class="facebook-link" target="_blank"><span class="fa fa-facebook"></span></a>-->
+		<!--<a href="#" class="twitter-link" target="_blank"><span class="fa fa-twitter"></span></a>-->
+
+		<!--</div>-->
+
+		<!--</div>-->
+		<!--<h3 class="bold">Andrew Bismarck</h3>-->
+		<!--<h5>Senior Product Designer at <br> Salesforce UX</h5>-->
+		<!--</div>-->
+		<!--</div>-->
+		<!--<div class="col-sm-4">-->
+		<!--<div class="box">-->
+		<!--<div class="img-wrap" style="background-image:url('images/images6.jpg');">-->
+
+		<!--<div class="overlay">-->
+
+		<!--<a href="#" class="facebook-link" target="_blank"><span class="fa fa-facebook"></span></a>-->
+		<!--<a href="#" class="twitter-link" target="_blank"><span class="fa fa-twitter"></span></a>-->
+
+		<!--</div>-->
+
+		<!--</div>-->
+		<!--<h3 class="bold">Patrick Mainhardt</h3>-->
+		<!--<h5>Senior engineer at the Financial <br> Times in London</h5>-->
+		<!--</div>-->
+		<!--</div>-->
+		<!--</div>-->
+		<!--</div>-->
+		<!--</section>-->
+		<!--<section class="who-section gray-section" id="mentors">-->
+		<!--<div class="container">-->
+		<!--&lt;!&ndash;<h5>WHO</h5>&ndash;&gt;-->
+		<!--<h2 class="m-b-20"><strong>Mentors</strong></h2>-->
+		<!--&lt;!&ndash;<h5 class="regular m-b-140">10 - 12th December 2015, London, UK</h5>&ndash;&gt;-->
+
+		<!--<div class="row">-->
+		<!--<div class="col-sm-4">-->
+		<!--<div class="box">-->
+		<!--<div class="img-wrap" style="background-image:url('images/images1.jpg');">-->
+
+		<!--<div class="overlay">-->
+
+		<!--<a href="#" class="facebook-link" target="_blank"><span class="fa fa-facebook"></span></a>-->
+		<!--<a href="#" class="twitter-link" target="_blank"><span class="fa fa-twitter"></span></a>-->
+
+		<!--</div>-->
+
+		<!--</div>-->
+		<!--<h3 class="bold">James Seaburg</h3>-->
+		<!--<h5>Digital product designer <br> at FreeAgent</h5>-->
+		<!--</div>-->
+		<!--</div>-->
+		<!--<div class="col-sm-4">-->
+		<!--<div class="box">-->
+		<!--<div class="img-wrap" style="background-image:url('images/images2.jpg');">-->
+
+		<!--<div class="overlay">-->
+
+		<!--<a href="#" class="facebook-link" target="_blank"><span class="fa fa-facebook"></span></a>-->
+		<!--<a href="#" class="twitter-link" target="_blank"><span class="fa fa-twitter"></span></a>-->
+
+		<!--</div>-->
+
+		<!--</div>-->
+		<!--<h3 class="bold">John Brandenberger</h3>-->
+		<!--<h5>General Manager of <br> New Products </h5>-->
+		<!--</div>-->
+		<!--</div>-->
+		<!--<div class="col-sm-4">-->
+		<!--<div class="box">-->
+		<!--<div class="img-wrap" style="background-image:url('images/images3.jpg');">-->
+
+		<!--<div class="overlay">-->
+
+		<!--<a href="#" class="facebook-link" target="_blank"><span class="fa fa-facebook"></span></a>-->
+		<!--<a href="#" class="twitter-link" target="_blank"><span class="fa fa-twitter"></span></a>-->
+
+		<!--</div>-->
+
+		<!--</div>-->
+		<!--<h3 class="bold">Sarah Walton</h3>-->
+		<!--<h5>Art director and web designer at the <br> UK website design studio Stuff <br> and Nonsense</h5>-->
+		<!--</div>-->
+		<!--</div>-->
+		<!--<div class="col-sm-4">-->
+		<!--<div class="box">-->
+		<!--<div class="img-wrap" style="background-image:url('images/images4.jpg');">-->
+
+		<!--<div class="overlay">-->
+
+		<!--<a href=" 	" class="facebook-link" target="_blank"><span class="fa fa-facebook"></span></a>-->
+		<!--<a href="#" class="twitter-link" target="_blank"><span class="fa fa-twitter"></span></a>-->
+
+		<!--</div>-->
+
+		<!--</div>-->
+		<!--<h3 class="bold">Leisa Geller</h3>-->
+		<!--<h5>Web craftsman and partner at <br> Fictive Kin</h5>-->
+		<!--</div>-->
+		<!--</div>-->
+		<!--<div class="col-sm-4">-->
+		<!--<div class="box">-->
+		<!--<div class="img-wrap" style="background-image:url('images/images5.jpg');">-->
+
+		<!--<div class="overlay">-->
+
+		<!--<a href="#" class="facebook-link" target="_blank"><span class="fa fa-facebook"></span></a>-->
+		<!--<a href="#" class="twitter-link" target="_blank"><span class="fa fa-twitter"></span></a>-->
+
+		<!--</div>-->
+
+		<!--</div>-->
+		<!--<h3 class="bold">Andrew Bismarck</h3>-->
+		<!--<h5>Senior Product Designer at <br> Salesforce UX</h5>-->
+		<!--</div>-->
+		<!--</div>-->
+		<!--<div class="col-sm-4">-->
+		<!--<div class="box">-->
+		<!--<div class="img-wrap" style="background-image:url('images/images6.jpg');">-->
+
+		<!--<div class="overlay">-->
+
+		<!--<a href="#" class="facebook-link" target="_blank"><span class="fa fa-facebook"></span></a>-->
+		<!--<a href="#" class="twitter-link" target="_blank"><span class="fa fa-twitter"></span></a>-->
+
+		<!--</div>-->
+
+		<!--</div>-->
+		<!--<h3 class="bold">Patrick Mainhardt</h3>-->
+		<!--<h5>Senior engineer at the Financial <br> Times in London</h5>-->
+		<!--</div>-->
+		<!--</div>-->
+		<!--</div>-->
+		<!--</div>-->
+		<!--</section>-->
+		<section class="when-section" id="when">
+			<div class="container">
+				<h2><strong>SCHEDULE</strong></h2>
+
+				<div class="customNavigation nav-slider text-center">
+					<a href="javascript:void(0)" class="inline middle btn prev"><img src="fonts/arrow-left.svg" class="m-t--3" alt=""></a>
+					<span class="text-nav inline middle" id="currDate">26th October 2018</span>
+					<a href="javascript:void(0)" class="inline middle btn next"><img src="fonts/arrow-right.svg" class="m-t--3" alt=""></a>
+				</div>
+
+				<div id="when-slider" class="owl-carousel owl-theme">
+
+					<div class="item" data-date="26th October 2018">
+						<article>
+							<ul class="list-unstyled">
+								<li>
+									<div class="row">
+										<div class="col-lg-2">
+											<h3><strong>11:00</strong></h3>
+											<p><span class="fa fa-clock-o m-r-5"></span>Hack Begins</p>
+										</div>
+										<div class="col-lg-6">
+											<h3><strong>To Be Released Soon!</strong></h3>
+											<p>Hold on! We are working hard to get the best hackathon to you</p>
+										</div>
+										<div class="col-lg-3 col-lg-offset-1">
+											<h3 class="light">CSI NSUT</h3>
+										</div>
+									</div>
+
+								</li>
+
+							</ul>
+						</article>
+					</div>
+					<div class="item" data-date="26th October 2018">
+						<article>
+							<ul class="list-unstyled">
+								<li>
+									<div class="row">
+										<div class="col-lg-2">
+											<h3><strong>09:00</strong></h3>
+											<p><span class="fa fa-clock-o m-r-5"></span>1st Evaluation</p>
+										</div>
+										<div class="col-lg-6">
+											<h3><strong>To Be Released Soon!</strong></h3>
+											<p>Hold on! We are working hard to get the best hackathon to you</p>
+										</div>
+										<div class="col-lg-3 col-lg-offset-1">
+											<h3 class="light">CSI NSUT</h3>
+										</div>
+									</div>
+
+								</li>
+
+							</ul>
+						</article>
+					</div>
+					<div class="item" data-date="27th October 2018">
+						<article>
+							<ul class="list-unstyled">
+								<li>
+									<div class="row">
+										<div class="col-lg-2">
+											<h3><strong>10:00</strong></h3>
+											<p><span class="fa fa-clock-o m-r-5"></span>Coding ends</p>
+										</div>
+										<div class="col-lg-6">
+											<h3><strong>To Be Released Soon!</strong></h3>
+											<p>Hold on! We are working hard to get the best hackathon to you</p>
+										</div>
+										<div class="col-lg-3 col-lg-offset-1">
+											<h3 class="light">CSI NSUT</h3>
+										</div>
+									</div>
+
+								</li>
+
+							</ul>
+						</article>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<section class="where-section" id="where">
+			<div class="container">
+				<h2><strong>LOCATION</strong></h2>
+				<p class="text-center">Netaji Subhas University of Technology - previously known as Netaji Subhas Institute of
+					Technology is one of the best Engineering Colleges in India consistently ranked among the top undergraduate
+					institutions.</p>
+				<p>NSUT is located in Dwarka - South West Delhi. Well connected to the major city centers by open and wide roads, the approximate distances from various locations are as under:-</p>
+				<p><b>By Metro</b><br>
+					01 Km from Dwarka Mor Metro Station.<br>
+					Use the Delhi Metro Service towards Dwarka and get off at the Dwarka Mor Metro Station.
+					Then board any Bus towards Dwarka from Dwarka Mor Bus Stop and get off at NSUT Main gate<br>
+					Or<br>
+					Take Cycle Rikshaw from Dwarka Mor Metro Station to reach NSUT
+				</p><p>
+				<b>By Road</b><br>
+					05 Kms from Uttam Nagar<br>
+					12 Kms from Delhi Airport<br>
+					16 Kms from Dhaula Kuan.<br>
+					30 Kms from Nehru Place.<br>
+					30 Kms from New Delhi Railway Station<br>
+					30 Kms from I.S.B.T.<br>
+					30 Kms from Old Delhi Railway Station<br>
+				</p><p>
+				<b>By Bus</b><br>
+					Well connected by various bus-routes from all over the Delhi. The details (except Metro routes) of which are as under:–<br>
+					764 - Nehru Place-Najafgarh IIT, R.K.Puram, Domestic airport, Palam, Dwarka, NSUT Main Gate<br>
+					727 - Jawahar Lal Nehru Stadium-Najafgarh Vasant Vihar, Airport, Palam, Dwarka, NSUT Main Gate<br>
+					783 - Shaheed Bhagat I.T.O., Barakhamba Rd, Udyog Bhawan, Teen-Murti, Dhaula Kuan, Delhi Cantt, Janak Puri, Uttam Ngr, Sewak Park /Dwarka Mor
+				</p>
+			</div>
+
+			<div class="map">
+
+				<div id="map"></div>
+
+				<div class="map-info-box">
+					<a href="javascript:void(0)" class="show-location"><span class="blink">LESS DETAILS</span></a>
+					<div class="map-info">
+						<h5>Address</h5>
+						<p>Azad Hind Fauz Marg,</p>
+						<p> Sector 3, Dwarka, New Delhi, Delhi </p>
+						<h5>Email</h5>
+						<p><a href="mailto:csi@nsitonline.in">innovision.hackathon@gmail.com</a></p>
+						<h5>Phone</h5>
+						<p>Ashish Kushwaha - +91 - 9599162910</p>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+		<section class="how-much-section" id="how-much">
+			<div class="container">
+				<h2><strong>PRIZES</strong></h2>
+
+				<div class="row">
+					<div class="col-sm-4">
+
+						<!--<article style="background-image:url('images/prcing-img.jpg');">-->
+						<article>
+							<div>
+								<h3>Prizes worth 25k!!!!!!</h3>
+								<h5>Amazon Echo Dots, Mi bands and loads more..</h5>
+								<h5>And how can we forget!! lots of swag for everyone</h5>
+							</div>
+						</article>
+
+					</div>
+
+					
+				</div>
+			</div>
+		</section>
+
+		<section class="clients-section" id="sponsors">
+			<div class="container">
+				<h2><strong>OUR SPONSORS</strong></h2>
+				<!--<ul class="list-unstyled">-->
+				<!--<li>-->
+				<!--<a href="#">-->
+				<!--<img src="images/client-icon1.png" alt="">-->
+				<!--</a>-->
+				<!--</li>-->
+				<!--<li>-->
+				<!--<a href="#">-->
+				<!--<img src="images/client-icon2.png" alt="">-->
+				<!--</a>-->
+				<!--</li>-->
+				<!--<li>-->
+				<!--<a href="#">-->
+				<!--<img src="images/client-icon3.png" alt="">-->
+				<!--</a>-->
+				<!--</li>-->
+				<!--<li>-->
+				<!--<a href="#">-->
+				<!--<img src="images/client-icon4.png" alt="">-->
+				<!--</a>-->
+				<!--</li>-->
+				<!--<li>-->
+				<!--<a href="#">-->
+				<!--<img src="images/client-icon5.png" alt="">-->
+				<!--</a>-->
+				<!--</li>-->
+				<!--<li>-->
+				<!--<a href="#">-->
+				<!--<img src="images/client-icon6.png" alt="">-->
+				<!--</a>-->
+				<!--</li>-->
+				<!--<li>-->
+				<!--<a href="#">-->
+				<!--<img src="images/client-icon7.png" alt="">-->
+				<!--</a>-->
+				<!--</li>-->
+				<!--</ul>-->
+				<div class="row">
+					<div class="col-12">
+						<img style="display: block;    margin: 0 auto;    max-width: 380px;" src="coming-soon.png" id="sponsi-pic">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--<section class="clients-section" id="sponsors">-->
+		<!--<div class="container">-->
+		<!--<h2><strong>OUR SPONSORS</strong></h2>-->
+		<!--<ul class="list-unstyled">-->
+		<!--<li>-->
+		<!--<a href="#">-->
+		<!--<img src="images/client-icon1.png" alt="">-->
+		<!--</a>-->
+		<!--</li>-->
+		<!--<li>-->
+		<!--<a href="#">-->
+		<!--<img src="images/client-icon2.png" alt="">-->
+		<!--</a>-->
+		<!--</li>-->
+		<!--<li>-->
+		<!--<a href="#">-->
+		<!--<img src="images/client-icon3.png" alt="">-->
+		<!--</a>-->
+		<!--</li>-->
+		<!--<li>-->
+		<!--<a href="#">-->
+		<!--<img src="images/client-icon4.png" alt="">-->
+		<!--</a>-->
+		<!--</li>-->
+		<!--<li>-->
+		<!--<a href="#">-->
+		<!--<img src="images/client-icon5.png" alt="">-->
+		<!--</a>-->
+		<!--</li>-->
+		<!--<li>-->
+		<!--<a href="#">-->
+		<!--<img src="images/client-icon6.png" alt="">-->
+		<!--</a>-->
+		<!--</li>-->
+		<!--<li>-->
+		<!--<a href="#">-->
+		<!--<img src="images/client-icon7.png" alt="">-->
+		<!--</a>-->
+		<!--</li>-->
+		<!--</ul>-->
+		<!--</div>-->
+		<!--</section>-->
+
+		<a id="top" href="#subheader">
+			<img src="images/arrow-top.png" alt="">
+		</a>
+	</main>
 
 
-  <footer class="footer-main">
+	<footer class="footer-main">
 
-	<div class="container">
+		<div class="container">
 
-		<small>Maintained and Managed by CSI NSIT </small>
+			<small>Maintained and Managed by CSI NSUT </small>
 
-		<div class="social-links right">
-			<a href="#">
-				<span class="fa fa-twitter"></span>
-			</a>
-			<a href="#">
-				<span class="fa fa-facebook"></span>
-			</a>
+			<div class="social-links right">
+				<a href="https://github.com/CSI-NSIT" target="_blank">
+					<span class="fa fa-github"></span>
+				</a>
+				<a href="https://www.facebook.com/csinsit" target="_blank">
+					<span class="fa fa-facebook"></span>
+				</a>
+			</div>
+
+			<div class="clearfix"></div>
+
 		</div>
 
-		<div class="clearfix"></div>
 
-	</div>
-
-
-</footer>
+	</footer>
 
 
 
@@ -686,12 +744,12 @@
 	<!--<![endif]-->
 	<script src="js/jquery.min.js"></script>
 	<!--<script src="js_1.js"></script>-->
-    <script src="js/all.min.js"></script>
-    <!--<script src="js/map.js"></script>-->
+	<script src="js/all.min.js"></script>
+	<!--<script src="js/map.js"></script>-->
 
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvHBgbR7aq9bSGq3wZwq4FDfesPba8rBk&libraries=places&callback=initMap"
-			async defer></script>
-    <script src="js/init.min.js"></script>
-  </body>
-</html>
+	 async defer></script>
+	<script src="js/init.min.js"></script>
+</body>
 
+</html>
