@@ -3641,11 +3641,11 @@ input[type="checkbox"]:checked+.check-box-item {
 
 .clients-section ul a {
     display: block;
-    opacity: .3
+    opacity: 1
 }
 
 .clients-section ul a:hover {
-    opacity: 1
+    opacity: 0.4
 }
 
 .prefooter-section {
